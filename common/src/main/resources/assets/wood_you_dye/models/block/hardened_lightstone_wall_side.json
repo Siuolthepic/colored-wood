@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/template_wall_side",
+    "textures": {
+        "wall": "wood_you_dye:block/hardened_lightstone"
+    }
+}

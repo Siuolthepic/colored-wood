@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "wood_you_dye",
+  "version": "${version}",
+  "name": "Wood you Dye",
+  "description": "",
+  "authors": [
+    "Siuolplex"
+  ],
+  "contact": {},
+  "license": "LGPLv3",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.siuolplex.wood_you_dye.fabric.WoodYouDye"
+    ],
+    "client": [
+      "io.siuolplex.wood_you_dye.fabric.WoodYouDyeClient"
+    ]
+  },
+  "mixins": [
+    "wood_you_dye.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": ">=1.18.2"
+  }
+}

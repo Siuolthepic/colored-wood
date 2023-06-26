@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+issueTrackerURL = ""
+license = "LGPL-3.0-only"
+
+[[mods]]
+modId = "wood_you_dye"
+version = "${version}"
+displayName = "More than just Soul Ice"
+displayURL = ""
+authors = [
+    "Siuolplex"
+]
+description = '''
+A mod about adding whatever comes to the Author's mind! Named after the former Consistency+ block and now MTJSI block, Soul Ice
+'''
+logoFile = "icon.png"
+
+[[dependencies.wood_you_dye]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.wood_you_dye]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
