@@ -5,6 +5,6 @@ import net.minecraft.block.TrapdoorBlock;
 
 public class WoodYouDyeTrapdoorBlock extends TrapdoorBlock {
     public WoodYouDyeTrapdoorBlock(Settings settings) {
-        super(settings, BlockSetType.OAK);
+        super(settings.nonOpaque(), BlockSetType.OAK);
     }
 }

@@ -1,5 +1,6 @@
 package io.siuolplex.wood_you_dye.registry;
 
+import io.siuolplex.wood_you_dye.WoodYouDyeMain;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;

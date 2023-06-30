@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wood_you_dye:block/red_planks"
+      "model": "wood_you_dye:block/black_planks"
     }
   }
 }

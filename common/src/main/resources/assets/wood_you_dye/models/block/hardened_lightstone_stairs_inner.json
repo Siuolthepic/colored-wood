@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/inner_stairs",
-    "textures": {
-        "bottom": "wood_you_dye:block/hardened_lightstone",
-        "top": "wood_you_dye:block/hardened_lightstone",
-        "side": "wood_you_dye:block/hardened_lightstone"
-    }
-}

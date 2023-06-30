@@ -1,5 +1,6 @@
 package io.siuolplex.wood_you_dye.registry;
 
+import io.siuolplex.wood_you_dye.WoodYouDyeMain;
 import io.siuolplex.wood_you_dye.block.*;
 import io.siuolplex.wood_you_dye.block.sign.WoodYouDyeHangingSignBlock;
 import io.siuolplex.wood_you_dye.block.sign.WoodYouDyeHangingWallSignBlock;
@@ -247,15 +248,9 @@ public class WoodYouDyeBlocks {
         return Registry.register(Registries.BLOCK, new Identifier("wood_you_dye", id), block);
     }
 
-    public static void init() {
-        wrapSignTypes();
-    }
+    public static void init() {}
 
     public static AbstractBlock.Settings commonSettings() {
         return AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOD).instrument(NoteBlockInstrument.BASS).strength(3.0f).lavaIgnitable();
     }
-
-    private static void wrapSignTypes() {
-    }
-
 }

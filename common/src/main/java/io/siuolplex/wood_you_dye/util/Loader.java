@@ -5,9 +5,7 @@ import java.nio.file.Path;
 public interface Loader {
     String getName();
 
-    Path getConfigDir(); // May not be used in this
-
     boolean getIsClient();
 
-
+    <T extends Object> T register(T registeredObject, String id);
 }

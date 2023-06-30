@@ -15,10 +15,11 @@ import java.util.function.Consumer;
 // Found here: https://github.com/TerraformersMC/Terraform/blob/1.19.4/terraform-wood-api-v1/src/main/java/com/terraformersmc/terraform/sign/mixin/MixinTextureRenderLayers.java
 @Mixin(TexturedRenderLayers.class)
 public class TexturedRenderLayersMixin {
-    @Inject(method = "addDefaultTextures", at = @At("RETURN"))
+    // Is this even used what
+    /*@Inject(method = "addDefaultTextures", at = @At("RETURN"))
     private static void injectSoulIceSigns(Consumer<Material> adder, CallbackInfo ci) {
         for(Material identifier: SpriteIdentifierRegistry.INSTANCE.getIdentifiers()) {
             adder.accept(identifier);
         }
-    }
+    }*/
 }

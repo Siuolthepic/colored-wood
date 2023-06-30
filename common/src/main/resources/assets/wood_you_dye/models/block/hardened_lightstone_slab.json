@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab",
-    "textures": {
-        "top": "wood_you_dye:block/hardened_lightstone",
-        "bottom": "wood_you_dye:block/hardened_lightstone",
-        "side": "wood_you_dye:block/hardened_lightstone"
-    }
-}
