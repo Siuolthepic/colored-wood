@@ -23,7 +23,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class HangingSignBlockEntityRendererMixin {
     @Unique protected SignBlockEntity soulIce$renderedBlockEntity;
 
-    @Inject(method = "Lnet/minecraft/client/render/block/entity/HangingSignBlockEntityRenderer;render(Lnet/minecraft/block/entity/SignBlockEntity;FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;II)V", at = @At(value = "HEAD"))
+    @Inject(method = "render(Lnet/minecraft/block/entity/SignBlockEntity;FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;II)V", at = @At(value = "HEAD"))
     private void setRenderedToSign(SignBlockEntity signBlockEntity, float f, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, int j, CallbackInfo ci) {
         this.soulIce$renderedBlockEntity = signBlockEntity;
     }

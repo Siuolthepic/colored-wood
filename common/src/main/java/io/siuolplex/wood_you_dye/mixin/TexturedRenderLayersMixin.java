@@ -11,8 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.function.Consumer;
 
-// Code is based on Terraform
-// Found here: https://github.com/TerraformersMC/Terraform/blob/1.19.4/terraform-wood-api-v1/src/main/java/com/terraformersmc/terraform/sign/mixin/MixinTextureRenderLayers.java
+
 @Mixin(TexturedRenderLayers.class)
 public class TexturedRenderLayersMixin {
     // Is this even used what

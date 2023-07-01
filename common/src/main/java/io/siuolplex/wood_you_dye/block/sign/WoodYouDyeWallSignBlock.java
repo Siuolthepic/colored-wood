@@ -10,7 +10,7 @@ public class WoodYouDyeWallSignBlock extends WallSignBlock implements WoodYouDye
     private final Identifier texture;
 
     public WoodYouDyeWallSignBlock(Settings settings, SignType type) {
-        super(settings, type);
+        super(settings.nonOpaque().noCollision(), type);
         this.texture = new Identifier("wood_you_dye", "entity/signs/" + type.getName());;
     }
 

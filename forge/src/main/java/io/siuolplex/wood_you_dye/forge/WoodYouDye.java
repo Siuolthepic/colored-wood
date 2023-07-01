@@ -1,5 +1,6 @@
 package io.siuolplex.wood_you_dye.forge;
 
+import com.mojang.datafixers.util.Either;
 import io.siuolplex.wood_you_dye.WoodYouDyeMain;
 import io.siuolplex.wood_you_dye.registry.WoodYouDyeBlocks;
 import io.siuolplex.wood_you_dye.registry.WoodYouDyeItems;
