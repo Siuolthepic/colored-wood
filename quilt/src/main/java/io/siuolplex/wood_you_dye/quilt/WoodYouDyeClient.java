@@ -1,4 +1,4 @@
-package io.siuolplex.wood_you_dye;
+package io.siuolplex.wood_you_dye.quilt;
 
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.registry.Registries;

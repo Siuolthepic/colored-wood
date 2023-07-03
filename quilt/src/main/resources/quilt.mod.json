@@ -5,7 +5,10 @@
     "id": "wood_you_dye",
     "provides": [],
     "version": "${version}",
-    "entrypoints": {},
+    "entrypoints": {
+      "init": "io.siuolplex.wood_you_dye.quilt.WoodYouDye",
+      "client_init": "io.siuolplex.wood_you_dye.quilt.WoodYouDyeClient"
+    },
     "depends": [
       {
         "id": "quilt_loader",

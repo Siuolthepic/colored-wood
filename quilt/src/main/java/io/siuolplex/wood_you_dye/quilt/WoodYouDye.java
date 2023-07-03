@@ -1,5 +1,6 @@
-package io.siuolplex.wood_you_dye;
+package io.siuolplex.wood_you_dye.quilt;
 
+import io.siuolplex.wood_you_dye.WoodYouDyeMain;
 import io.siuolplex.wood_you_dye.registry.WoodYouDyeItems;
 import io.siuolplex.wood_you_dye.util.Loader;
 import net.fabricmc.api.EnvType;
