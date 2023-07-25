@@ -4,7 +4,7 @@
 	"base_block": "wood_you_dye:red_planks",
 	"textures": "wood_you_dye:block/red_planks",
 	"recipes": "sawing",
-	"map_color": "fire",
+	"map_color": "red",
 	"types_to_generate": [
 		"facade", "round_arch", "octagonal_column",
 		"fence_post", "crown_molding", "post_cap",
