@@ -1,0 +1,13 @@
+{
+	"only_if_present": "wood_you_dye",
+	"name": "cyan",
+	"base_block": "wood_you_dye:cyan_planks",
+	"textures": "wood_you_dye:block/cyan_planks",
+	"recipes": "sawing",
+	"map_color": "fire",
+	"types_to_generate": [
+		"facade", "round_arch", "octagonal_column",
+		"fence_post", "crown_molding", "post_cap",
+		"post_lantern", "lattice", "transom"
+	]
+}
