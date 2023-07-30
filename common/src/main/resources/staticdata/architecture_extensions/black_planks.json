@@ -1,6 +1,6 @@
 {
 	"only_if_present": "wood_you_dye",
-	"name": "black_plank",
+	"name": "black",
 	"base_block": "wood_you_dye:black_planks",
 	"textures": "wood_you_dye:block/black_planks",
 	"recipes": "sawing",
