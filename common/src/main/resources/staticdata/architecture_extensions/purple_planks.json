@@ -1,0 +1,13 @@
+{
+	"only_if_present": "wood_you_dye",
+	"name": "purple",
+	"base_block": "wood_you_dye:purple_planks",
+	"textures": "wood_you_dye:block/purple_planks",
+	"recipes": "sawing",
+	"map_color": "purple",
+	"types_to_generate": [
+		"facade", "round_arch", "octagonal_column",
+		"fence_post", "crown_molding", "post_cap",
+		"post_lantern", "lattice", "transom"
+	]
+}
