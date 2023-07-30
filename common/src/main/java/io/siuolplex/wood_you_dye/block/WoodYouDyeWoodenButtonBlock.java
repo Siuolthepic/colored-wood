@@ -5,6 +5,6 @@ import net.minecraft.block.AbstractButtonBlock;
 
 public class WoodYouDyeWoodenButtonBlock extends AbstractButtonBlock {
     public WoodYouDyeWoodenButtonBlock(Settings settings) {
-        super(settings, BlockSetType.OAK, 20, true);
+        super(settings.noCollision(), BlockSetType.OAK, 20, true);
     }
 }

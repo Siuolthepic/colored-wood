@@ -6,8 +6,6 @@ import net.minecraft.block.enums.SlabType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.loot.LootTables;
-import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.context.LootContextParameterSet;
 import net.minecraft.util.Identifier;
 import org.spongepowered.asm.mixin.Mixin;
@@ -27,13 +25,13 @@ public abstract class AbstractBlockMixin {
 
     @Inject(method = "getDroppedStacks", cancellable = true, locals = LocalCapture.CAPTURE_FAILHARD, at = @At(value = "RETURN"))
     private void addSelfIfNoLootTable(BlockState state, LootContextParameterSet.Builder builder, CallbackInfoReturnable<List<ItemStack>> cir, Identifier identifier) {
-        if (state.getBlock().getLootTableId().equals(LootTables.EMPTY) && state.getBlock().getLootTableId().getNamespace().equals("wood_you_dye")) {
+        if (state.getBlock().getLootTableId().getNamespace().equals("wood_you_dye")) {
             if (state.getBlock() instanceof SlabBlock && state.get(SlabBlock.TYPE).equals(SlabType.DOUBLE)) {
                 cir.setReturnValue(List.of(new ItemStack(this.asItem()), new ItemStack(this.asItem())));
             } else if (state.getBlock() instanceof DoorBlock && state.get(DoorBlock.HALF).equals(DoubleBlockHalf.UPPER)) {
                 cir.setReturnValue(List.of(Items.AIR.getDefaultStack()));
             } else if (state.getBlock() instanceof AbstractSignBlock sign) {
-                cir.setReturnValue(List.of(new ItemStack(sign.asItem()))); // TODO: MAKE THIS WORK
+                cir.setReturnValue(List.of(new ItemStack(sign.asItem())));
             } else {
                 cir.setReturnValue(List.of(new ItemStack(this.asItem())));
             }
