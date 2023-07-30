@@ -1,6 +1,6 @@
 {
 	"only_if_present": "wood_you_dye",
-	"name": "light_blue",
+	"name": "light_blue_plank",
 	"base_block": "wood_you_dye:light_blue_planks",
 	"textures": "wood_you_dye:block/light_blue_planks",
 	"recipes": "sawing",
