@@ -18,7 +18,6 @@ subprojects {
     dependencies {
         minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
         mappings loom.layered {
-            it.mappings("net.fabricmc:yarn:1.19.4+build.1:v2")
             it.mappings("org.quiltmc:quilt-mappings:${rootProject.minecraft_version}+build.${rootProject.mappings_version}:intermediary-v2")
         }
     }
