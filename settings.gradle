@@ -1,19 +1,39 @@
 pluginManagement {
     repositories {
-        maven { name = "Architectury"; url = "https://maven.architectury.dev/" }
-        maven { name = "Cotton"; url = "https://server.bbkr.space/artifactory/libs-release/"}
-        maven { name = "Fabric"; url = "https://maven.fabricmc.net/"}
-        maven { name = "Forge"; url = "https://maven.minecraftforge.net/" }
-        maven { name = "Quilt"; url = "https://maven.quiltmc.org/repository/release" }
-        mavenCentral()
         gradlePluginPortal()
+        mavenCentral()
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = 'Fabric'
+                    url = uri('https://maven.fabricmc.net')
+                }
+            }
+            filter {
+                includeGroup('net.fabricmc')
+                includeGroup('fabric-loom')
+            }
+        }
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = 'Sponge'
+                    url = uri('https://repo.spongepowered.org/repository/maven-public')
+                }
+            }
+            filter {
+                includeGroupAndSubgroups("org.spongepowered")
+            }
+        }
     }
 }
 
-include("common")
-include("fabric")
-include("forge")
-include("quilt")
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+}
 
-rootProject.name = "wood-you-dye"
-
+// This should match the folder name of the project, or else IDEA may complain (see https://youtrack.jetbrains.com/issue/IDEA-317606)
+rootProject.name = 'Wood You Dye'
+include('common')
+include('fabric')
+include('neoforge')

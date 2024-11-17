@@ -1,0 +1,5 @@
+"HangingSignBlockEntityRendererMixin",
+    "HangingSignEditScreenMixin",
+    "SignBlockEntityRendererMixin",
+    "SignEditScreenMixin",
+    "TexturedRenderLayersMixin"

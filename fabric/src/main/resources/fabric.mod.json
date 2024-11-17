@@ -17,6 +17,9 @@
     ],
     "client": [
       "io.siuolplex.wood_you_dye.fabric.WoodYouDyeClient"
+    ],
+    "fabric-datagen": [
+      "io.siuolplex.wood_you_dye.fabric.WoodYouDyeDatagen"
     ]
   },
   "mixins": [
@@ -25,6 +28,6 @@
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": ">=1.18.2"
+    "minecraft": ">=1.21"
   }
 }

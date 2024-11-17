@@ -1,15 +1,14 @@
 package io.siuolplex.wood_you_dye.registry;
 
-import io.siuolplex.wood_you_dye.WoodYouDyeMain;
-import net.minecraft.block.Block;
-import net.minecraft.item.*;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.HangingSignItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SignItem;
 
-import java.util.ArrayList;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 public class WoodYouDyeItems {
@@ -207,13 +206,13 @@ public class WoodYouDyeItems {
     public static final Item BLACK_PLANK_HANGING_SIGN = register("black_plank_hanging_sign", new HangingSignItem(WoodYouDyeBlocks.BLACK_PLANK_HANGING_SIGN, WoodYouDyeBlocks.BLACK_PLANK_WALL_HANGING_SIGN, sharedItemSettings()));
 
 
-    public static Item.Settings sharedItemSettings() {
-        return new Item.Settings();
+    public static Item.Properties sharedItemSettings() {
+        return new Item.Properties();
     }
 
     public static Item register(String id, Item item) {
         itemGroupHolder.add(item);
-        return Registry.register(Registries.ITEM, new Identifier("wood_you_dye", id), item);
+        return Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath("wood_you_dye", id), item);
     }
 
     public static void init() {}

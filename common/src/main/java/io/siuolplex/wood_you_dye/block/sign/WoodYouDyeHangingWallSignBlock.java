@@ -1,27 +1,27 @@
 package io.siuolplex.wood_you_dye.block.sign;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.WallHangingSignBlock;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.SignType;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.WallHangingSignBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class WoodYouDyeHangingWallSignBlock extends WallHangingSignBlock implements WoodYouDyeHangingSign {
-    private final Identifier guiTexture;
-    private final Identifier texture;
+    private final ResourceLocation guiTexture;
+    private final ResourceLocation texture;
 
-    public WoodYouDyeHangingWallSignBlock(AbstractBlock.Settings settings, SignType type) {
-        super(settings, type);
-        this.texture = new Identifier("wood_you_dye", "entity/signs/hanging/" + type.getName());
-        this.guiTexture = new Identifier("wood_you_dye", "textures/gui/hanging_sign/" + type.getName());
+    public WoodYouDyeHangingWallSignBlock(WoodType type, BlockBehaviour.Properties settings) {
+        super(type, settings);
+        this.texture = ResourceLocation.fromNamespaceAndPath("wood_you_dye", "entity/signs/hanging/" + type.name());
+        this.guiTexture = ResourceLocation.fromNamespaceAndPath("wood_you_dye", "textures/gui/hanging_sign/" + type.name());
     }
 
     @Override
-    public Identifier getGuiTexture() {
+    public ResourceLocation getGuiTexture() {
         return guiTexture;
     }
 
     @Override
-    public Identifier getTexture() {
+    public ResourceLocation getTexture() {
         return texture;
     }
 }

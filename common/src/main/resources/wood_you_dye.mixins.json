@@ -6,16 +6,12 @@
   "mixins": [
     "AbstractBlockMixin",
     "BlockEntityTypeMixin",
-    "SignTypeMixin"
+    "WoodTypeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "client": [
-    "HangingSignBlockEntityRendererMixin",
-    "HangingSignEditScreenMixin",
-    "SignBlockEntityRendererMixin",
-    "SignEditScreenMixin",
-    "TexturedRenderLayersMixin"
+
   ]
 }
