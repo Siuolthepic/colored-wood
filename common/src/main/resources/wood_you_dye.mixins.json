@@ -4,7 +4,6 @@
   "package": "io.siuolplex.wood_you_dye.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "AbstractBlockMixin",
     "BlockEntityTypeMixin",
     "WoodTypeMixin"
   ],
@@ -12,6 +11,10 @@
     "defaultRequire": 1
   },
   "client": [
-
-  ]
+    "client.HangingSignBlockEntityRendererMixin",
+    "client.HangingSignEditScreenMixin",
+    "client.SignBlockEntityRendererMixin",
+    "client.SignEditScreenMixin"
+  ],
+  "refmap": "wood_you_dye.refmap.json"
 }

@@ -39,7 +39,4 @@ artifacts {
     commonResources sourceSets.main.resources.sourceDirectories.singleFile
 }
 
-sourceSets.main.resources {
-    srcDir 'src/main/resources'
-}
 

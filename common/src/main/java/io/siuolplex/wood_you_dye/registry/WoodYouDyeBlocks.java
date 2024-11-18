@@ -1,6 +1,5 @@
 package io.siuolplex.wood_you_dye.registry;
 
-import io.siuolplex.wood_you_dye.WoodYouDyeMain;
 import io.siuolplex.wood_you_dye.block.*;
 import io.siuolplex.wood_you_dye.block.sign.WoodYouDyeHangingSignBlock;
 import io.siuolplex.wood_you_dye.block.sign.WoodYouDyeHangingWallSignBlock;
@@ -17,9 +16,13 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 import static io.siuolplex.wood_you_dye.registry.WoodYouDyeSignTypes.*;
 
 public class WoodYouDyeBlocks {
+    public static Set<Block> blockHolder = new LinkedHashSet<>();
     public static final Block RED_PLANKS = register("red_planks", new Block(commonSettings().mapColor(MapColor.COLOR_RED)));
     public static final Block RED_PLANK_SLAB = register("red_plank_slab", new SlabBlock(commonSettings().mapColor(MapColor.COLOR_RED)));
     public static final Block RED_PLANK_STAIRS = register("red_plank_stairs", new WoodYouDyeStairBlock(RED_PLANKS.defaultBlockState(), commonSettings().mapColor(MapColor.COLOR_RED)));
@@ -247,10 +250,7 @@ public class WoodYouDyeBlocks {
     public static String dumpedIds = "Dumped IDs:\n";
 
     public static Block register(String id, Block block) {
-        if (WoodYouDyeMain.DUMP_IDS) {
-            dumpedIds = dumpedIds + "\"wood_you_dye:" + id + "\",\n";
-            //System.out.println("Lol " + id);
-        }
+        blockHolder.add(block);
         return Registry.register(BuiltInRegistries.BLOCK, ResourceLocation.fromNamespaceAndPath("wood_you_dye", id), block);
     }
 

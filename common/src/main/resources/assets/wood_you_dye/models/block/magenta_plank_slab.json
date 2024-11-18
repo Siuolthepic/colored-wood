@@ -2,7 +2,7 @@
   "parent": "minecraft:block/slab",
   "textures": {
     "bottom": "wood_you_dye:block/magenta_planks",
-    "top": "wood_you_dye:block/magenta_planks",
-    "side": "wood_you_dye:block/magenta_planks"
+    "side": "wood_you_dye:block/magenta_planks",
+    "top": "wood_you_dye:block/magenta_planks"
   }
 }

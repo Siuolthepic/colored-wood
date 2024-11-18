@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/button_inventory",
-  "textures": {
-    "texture": "wood_you_dye:block/gray_planks"
-  }
+  "parent": "wood_you_dye:block/gray_plank_button_inventory"
 }

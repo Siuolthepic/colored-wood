@@ -206,5 +206,18 @@
   "architecture_extensions.grouped_block.wood_you_dye.white": "White Plank",
   "architecture_extensions.grouped_block.wood_you_dye.light_gray": "Light Gray Plank",
   "architecture_extensions.grouped_block.wood_you_dye.gray": "Gray Plank",
-  "architecture_extensions.grouped_block.wood_you_dye.black": "Black Plank"
+  "architecture_extensions.grouped_block.wood_you_dye.black": "Black Plank",
+
+  "tag.item.wood_you_dye.button": "Wood you Dye Button",
+  "tag.item.wood_you_dye.doors": "Wood you Dye Door",
+  "tag.item.wood_you_dye.fence_gates": "Wood you Dye Fence Gates",
+  "tag.item.wood_you_dye.fences": "Wood you Dye Fences",
+  "tag.item.wood_you_dye.hanging_sign": "Wood you Dye Hanging Sign",
+  "tag.item.wood_you_dye.planks": "Wood you Dye Planks",
+  "tag.item.wood_you_dye.pressure_plates": "Wood you Dye Pressure Plate",
+  "tag.item.wood_you_dye.signs": "Wood you Dye Sign",
+  "tag.item.wood_you_dye.slabs": "Wood you Dye Slab",
+  "tag.item.wood_you_dye.stairs": "Wood you Dye Stairs",
+  "tag.item.wood_you_dye.trapdoor": "Wood you Dye Trapdoor",
+  "tag.item.wood_you_dye.vanilla_planks": "Vanilla Overworld Planks"
 }

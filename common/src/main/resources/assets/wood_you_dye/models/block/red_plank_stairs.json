@@ -2,7 +2,7 @@
   "parent": "minecraft:block/stairs",
   "textures": {
     "bottom": "wood_you_dye:block/red_planks",
-    "top": "wood_you_dye:block/red_planks",
-    "side": "wood_you_dye:block/red_planks"
+    "side": "wood_you_dye:block/red_planks",
+    "top": "wood_you_dye:block/red_planks"
   }
 }

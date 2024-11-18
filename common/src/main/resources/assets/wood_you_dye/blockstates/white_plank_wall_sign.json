@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "wood_you_dye:block/white_plank_sign"
-        }
+  "variants": {
+    "": {
+      "model": "wood_you_dye:block/white_plank_wall_sign"
     }
+  }
 }

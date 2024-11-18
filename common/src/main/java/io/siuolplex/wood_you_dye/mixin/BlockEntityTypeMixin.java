@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(BlockEntityType.class)
 public class BlockEntityTypeMixin {
     @Inject(method = "isValid", at = @At("HEAD"), cancellable = true)
-    private void supports(BlockState state, CallbackInfoReturnable<Boolean> info) {
+    private void isValid(BlockState state, CallbackInfoReturnable<Boolean> info) {
         Block block = state.getBlock();
 
         if (block instanceof WoodYouDyeSign) {

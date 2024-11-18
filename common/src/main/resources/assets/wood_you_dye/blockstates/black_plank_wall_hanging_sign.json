@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "wood_you_dye:block/black_plank_hanging_sign"
-        }
+  "variants": {
+    "": {
+      "model": "wood_you_dye:block/black_plank_wall_hanging_sign"
     }
+  }
 }

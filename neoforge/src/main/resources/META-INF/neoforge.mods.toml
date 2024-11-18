@@ -32,6 +32,3 @@ side = "BOTH"
 
 [[mixins]]
 config="wood_you_dye.mixins.json"
-
-[[mixins]]
-config="wood_you_dye.forge.mixins.json"
