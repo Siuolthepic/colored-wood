@@ -6,15 +6,12 @@ import io.siuolplex.wood_you_dye.util.Loader;
 
 public class WoodYouDyeMain {
     public static Loader LOADER = null;
-    public static final boolean DUMP_IDS = false;
 
     public static void init(Loader loader) {
         LOADER = loader;
         if (!LOADER.getName().equals("neoforge")) {
             WoodYouDyeBlocks.init();
             WoodYouDyeItems.init();
-
-
         }
     }
 }

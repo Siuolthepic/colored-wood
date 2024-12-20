@@ -2,11 +2,9 @@ package io.siuolplex.wood_you_dye.forge;
 
 import io.siuolplex.wood_you_dye.WoodYouDyeMain;
 import io.siuolplex.wood_you_dye.util.Loader;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.loading.FMLLoader;
 
 @Mod(WoodYouDye.ID)
 public class WoodYouDye {
@@ -28,14 +26,5 @@ public class WoodYouDye {
             return "neoforge";
         }
 
-        @Override
-        public boolean getIsClient() {
-            return FMLLoader.getDist() == Dist.CLIENT;
-        }
-
-        @Override
-        public <T> T register(T registeredObject, String id) {
-            return registeredObject;
-        }
     }
 }

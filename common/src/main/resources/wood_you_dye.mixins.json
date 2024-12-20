@@ -11,9 +11,9 @@
     "defaultRequire": 1
   },
   "client": [
-    "client.HangingSignBlockEntityRendererMixin",
+    "client.HangingSignRendererMixin",
     "client.HangingSignEditScreenMixin",
-    "client.SignBlockEntityRendererMixin",
+    "client.SignRendererMixin",
     "client.SignEditScreenMixin"
   ],
   "refmap": "wood_you_dye.refmap.json"

@@ -20,10 +20,10 @@ public class SignEditScreenMixin{
     @Shadow @Nullable private SignRenderer.SignModel signModel;
 
     @ModifyVariable(method = "renderSignBackground", at = @At(value = "INVOKE_ASSIGN", target = "Lnet/minecraft/client/renderer/Sheets;getSignMaterial(Lnet/minecraft/world/level/block/state/properties/WoodType;)Lnet/minecraft/client/resources/model/Material;"))
-    private Material getSignTextureId(Material spriteIdentifier, GuiGraphics context, BlockState state) {
+    private Material getSignTextureId(Material material, GuiGraphics context, BlockState state) {
         if (state.getBlock() instanceof WoodYouDyeSign sign) {
             return new Material(Sheets.SIGN_SHEET, sign.getTexture());
         }
-        return spriteIdentifier;
+        return material;
     }
 }

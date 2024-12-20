@@ -21,7 +21,7 @@ public class HangingSignEditScreenMixin {
     @Shadow private ResourceLocation texture;
 
     @Inject(method = "<init>", at = @At("TAIL"))
-    private void initSignTextureId(SignBlockEntity signBlockEntity, boolean bl, boolean bl2, CallbackInfo ci) {
+    private void woodYouDye$initSignTextureId(SignBlockEntity signBlockEntity, boolean bl, boolean bl2, CallbackInfo ci) {
         if (signBlockEntity.getBlockState().getBlock() instanceof WoodYouDyeHangingSign sign) {
             ResourceLocation guiTexture = sign.getGuiTexture();
             this.texture = ResourceLocation.fromNamespaceAndPath(guiTexture.getNamespace(), guiTexture.getPath() + ".png");
