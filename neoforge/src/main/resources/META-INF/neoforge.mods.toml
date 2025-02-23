@@ -8,9 +8,12 @@ modId = "wood_you_dye"
 version = "${version}"
 displayName = "Wood You Dye"
 displayURL = ""
-authors = [
-    "Siuolplex"
-]
+authors = "Siuolplex"
+credits = ''''
+Siuolplex - Mod Author
+Klayzer - Russian Translation
+WoodierTexas - Older Version ArchitecturyExtensions Support
+'''
 description = '''
 A Mod thats all about dyable wooden planks!
 '''

@@ -5,7 +5,16 @@
   "name": "Wood you Dye",
   "description": "A Mod thats all about dyable wooden planks!",
   "authors": [
-    "Siuolplex"
+    {
+      "name": "Siuolplex",
+      "contact": {
+        "bluesky": "https://bsky.app/profile/siuol.bsky.social"
+      }
+    }
+  ],
+  "contributors": [
+    "Klayzer - Russian Translation",
+    "WoodierTexas - Older Version ArchitecturyExtensions Support"
   ],
   "contact": {},
   "license": "LGPLv3",
